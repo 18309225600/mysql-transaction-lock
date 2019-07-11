@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url:  jdbc:mysql://192.168.117.128:3306/tsl?allowMultiQueries=true
+    username:  root
+    password:  123456
+    driver-class-name:  com.mysql.jdbc.Driver
+
+
+#mybatis
+mybatis:
+  mapper-locations: classpath*:mybatis/mapper/*.xml
+
+logging:
+  level:
+    root: info
+    com:
+      lhf:
+        mysqltransactionlock:
+          dao:  debug
